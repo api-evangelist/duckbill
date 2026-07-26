@@ -1,0 +1,35 @@
+generated: '2026-07-18'
+method: searched
+source: https://clerk.getduckbill.com/.well-known/oauth-authorization-server
+docs: https://getduckbill.com/platform
+notes: >-
+  Scopes advertised by Duckbill's OAuth 2.0 / OIDC authorization server
+  (Clerk-hosted on clerk.getduckbill.com). These are the OIDC identity scopes the
+  "Connect to Claude" MCP OAuth flow requests; Duckbill publishes no separate
+  fine-grained API-permission scope reference.
+schemes:
+- name: OAuth2
+  source: well-known/duckbill-oauth-authorization-server.json
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://clerk.getduckbill.com/oauth/authorize
+    tokenUrl: https://clerk.getduckbill.com/oauth/token
+scopes:
+- scope: openid
+  description: OpenID Connect sign-in; issue an ID token for the authenticated user.
+  flows: [authorizationCode]
+- scope: profile
+  description: Access to basic profile claims (name, given_name, family_name, picture, preferred_username).
+  flows: [authorizationCode]
+- scope: email
+  description: Access to the user's email and email_verified claims.
+  flows: [authorizationCode]
+- scope: public_metadata
+  description: Read the user's public metadata stored in Clerk.
+  flows: [authorizationCode]
+- scope: private_metadata
+  description: Read the user's private metadata stored in Clerk.
+  flows: [authorizationCode]
+- scope: offline_access
+  description: Issue a refresh token for long-lived, offline access.
+  flows: [authorizationCode]

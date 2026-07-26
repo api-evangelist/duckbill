@@ -1,0 +1,25 @@
+# Duckbill
+
+> Duckbill is an AI-plus-human task-completion service that executes real-world errands — fighting refunds and billing disputes, cancelling services, getting vendor quotes, and booking appointments and reservations — by pairing AI planning with background-checked human "doers". It exposes this execution layer to AI agents through a hosted MCP (Model Context Protocol) server ("Connect to Claude"), letting a developer or agent hand off any task that needs real human follow-through. Backed by Forerunner Ventures, General Catalyst, and Uncork Capital.
+
+## Product
+- [Duckbill home](https://getduckbill.com): What Duckbill does and how requests (text, email, forwarded messages, app) are handled.
+- [Developer platform](https://getduckbill.com/platform): API / MCP / CLI access to plug human execution into AI workflows.
+- [Pricing](https://getduckbill.com/pricing): Essentials $49/mo, Individual $99/mo, Household $169/mo, Household Plus $350/mo, Team (custom). All plans include MCP integration.
+- [Research blog](https://research.getduckbill.com/): Duckbill research and product writing.
+
+## Access
+- [Sign up](https://app.getduckbill.com/sign-up)
+- [Log in](https://app.getduckbill.com/login)
+- [Connect to Claude (MCP)](https://app.getduckbill.com/signup/mcp): OAuth-gated MCP server enrollment.
+
+## Auth & discovery (artifacts)
+- [OAuth authorization server](https://raw.githubusercontent.com/api-evangelist/duckbill/refs/heads/main/well-known/duckbill-oauth-authorization-server.json): RFC 8414 metadata (Clerk-hosted on clerk.getduckbill.com).
+- [OpenID configuration](https://raw.githubusercontent.com/api-evangelist/duckbill/refs/heads/main/well-known/duckbill-openid-configuration.json): OIDC discovery document.
+- [Authentication profile](https://raw.githubusercontent.com/api-evangelist/duckbill/refs/heads/main/authentication/duckbill-authentication.yml): OAuth 2.0 authorization_code + PKCE, OIDC.
+- [OAuth scopes](https://raw.githubusercontent.com/api-evangelist/duckbill/refs/heads/main/scopes/duckbill-scopes.yml): openid, profile, email, public_metadata, private_metadata, offline_access.
+- [MCP server](https://raw.githubusercontent.com/api-evangelist/duckbill/refs/heads/main/mcp/duckbill-mcp.yml): Hosted MCP server manifest.
+
+## Legal
+- [Privacy policy](https://getduckbill.com/privacy)
+- [Terms of service](https://getduckbill.com/terms)

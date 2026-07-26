@@ -1,0 +1,36 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of getduckbill.com + app/clerk hosts
+notes: >-
+  getduckbill.com serves no /.well-known/ documents (security.txt,
+  openid-configuration, oauth-authorization-server, api-catalog, ai-plugin.json
+  all 404). app.getduckbill.com returns its SPA shell (text/html) for
+  /.well-known/* paths, so those are not real discovery documents. The genuine
+  OAuth 2.0 / OIDC discovery surface is served by Clerk on Duckbill's own
+  subdomain clerk.getduckbill.com and backs the "Connect to Claude" MCP OAuth
+  flow.
+hosts:
+- host: https://clerk.getduckbill.com
+  documents:
+  - path: /.well-known/oauth-authorization-server   # RFC 8414
+    status: 200
+    content_type: application/json
+    file: duckbill-oauth-authorization-server.json
+  - path: /.well-known/openid-configuration          # OIDC discovery
+    status: 200
+    content_type: application/json
+    file: duckbill-openid-configuration.json
+  - path: /.well-known/jwks.json
+    status: 200
+- host: https://getduckbill.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404

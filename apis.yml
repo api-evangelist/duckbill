@@ -1,8 +1,16 @@
 aid: duckbill
 name: Duckbill
-description: 'Duckbill is a company surfaced as a portfolio company of forerunner-ventures, general-catalyst,
-  uncork-capital and added to the API Evangelist network as a stub for enrichment. Sector: consumer. This
-  profile is a lead awaiting the enrichment pipeline.'
+description: >-
+  Duckbill is an AI-plus-human task-completion service that executes the
+  real-world errands people avoid: fighting refunds, disputes and billing
+  errors, cancelling services, researching vendors and getting quotes, and
+  booking appointments and reservations. It pairs AI planning with
+  background-checked human "doers" who make the phone calls and handle the red
+  tape, accepting requests by text, email, forwarded message, or app. Duckbill
+  exposes this execution layer to AI agents through a hosted MCP (Model Context
+  Protocol) server — "Connect to Claude" — plus platform API and CLI access, so
+  developers can plug real human follow-through into any AI workflow. Backed by
+  Forerunner Ventures, General Catalyst, and Uncork Capital.
 url: https://raw.githubusercontent.com/api-evangelist/duckbill/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +20,31 @@ x-backed-by:
 - uncork-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://getduckbill.com/preview.png
 tags:
 - Company
 - Consumer
+- AI Assistant
+- Personal Assistant
+- Task Automation
+- Agents
+- MCP
+- Concierge
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -27,3 +54,38 @@ maintainers:
 common:
 - type: Website
   url: https://getduckbill.com
+- type: DeveloperPortal
+  url: https://getduckbill.com/platform
+- type: Documentation
+  url: https://getduckbill.com/platform
+- type: MCPServer
+  url: mcp/duckbill-mcp.yml
+- type: Authentication
+  url: authentication/duckbill-authentication.yml
+- type: OAuthScopes
+  url: scopes/duckbill-scopes.yml
+- type: WellKnown
+  url: well-known/duckbill-well-known.yml
+- type: DomainSecurity
+  url: security/duckbill-domain-security.yml
+- type: LLMsTxt
+  url: llms/duckbill-llms.txt
+- type: Blog
+  url: https://research.getduckbill.com/
+- type: Pricing
+  url: https://getduckbill.com/pricing
+- type: SignUp
+  url: https://app.getduckbill.com/sign-up
+- type: Login
+  url: https://app.getduckbill.com/login
+- type: TermsOfService
+  url: https://getduckbill.com/terms
+- type: PrivacyPolicy
+  url: https://getduckbill.com/privacy
+- type: Support
+  url: mailto:support@getduckbill.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

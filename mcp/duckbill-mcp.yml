@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+status: published
+source: https://getduckbill.com/platform
+notes: >-
+  Duckbill publishes a first-party, hosted MCP (Model Context Protocol) server as
+  a headline feature ("Connect to Claude" / "plug real human execution into any AI
+  workflow"). Every paid plan (Essentials through Team) lists MCP integration.
+  Enrollment is via https://app.getduckbill.com/signup/mcp (OAuth-gated, HTTP 403
+  unauthenticated); the streamable-HTTP MCP endpoint is provisioned per account
+  behind the Clerk OAuth 2.0 flow (see authentication/duckbill-authentication.yml),
+  so the concrete endpoint URL is not publicly enumerable without an account. The
+  server lets an AI agent hand real-world task execution (calls, disputes,
+  bookings, research) off to Duckbill's human "doers".
+server:
+  name: duckbill
+  vendor: Duckbill
+  transport: http            # streamable HTTP, OAuth 2.0 (authorization_code + PKCE)
+  auth: oauth2
+  authorization_server: https://clerk.getduckbill.com
+  enrollment_url: https://app.getduckbill.com/signup/mcp
+tools: []                    # tool list is not published; requires an authenticated session to enumerate
