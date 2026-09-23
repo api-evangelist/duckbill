@@ -1,0 +1,30 @@
+# Front Door AI Index — duckbill — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: duckbill
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: getduckbill.com
+  final_host: getduckbill.com
+  ownership: own
+  owner: duckbill
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 25
+  host_score: 25
+  density: 23.83
+  words: 1049
+  tiers:
+    agentic: 9
+    core: 16
+    model: 0
+  ambiguous: 7
+  top_terms:
+    AI: 16
+    agent: 6
+    MCP: 5
+    AI agent: 3
+    AI assistant: 1
+    intelligence: 1
