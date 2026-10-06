@@ -45,7 +45,7 @@ accessModel:
   method: derived
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-10-06'
 image: https://getduckbill.com/preview.png
 tags:
 - Company
@@ -63,6 +63,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://lp.getduckbill.com/blog
+  type: Blog
 - type: Website
   url: https://getduckbill.com
 - type: DeveloperPortal
