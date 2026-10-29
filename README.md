@@ -64,6 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Duckbill is a company surfaced as a portfolio company of forerunner-ventures, general-catalyst, uncork-capital and added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.
+Duckbill is an AI-plus-human task-completion service that executes the real-world errands people avoid: fighting refunds, disputes and billing errors, cancelling services, researching vendors and getting quotes, and booking appointments and reservations. It pairs AI planning with background-checked human "doers" who make the phone calls and handle the red tape, accepting requests by text, email, forwarded message, or app. Duckbill exposes this execution layer to AI agents through a hosted MCP (Model Context Protocol) server — "Connect to Claude" — plus platform API and CLI access, so developers can plug real human follow-through into any AI workflow. Backed by Forerunner Ventures, General Catalyst, and Uncork Capital.
 
-Backed by: forerunner-ventures, general-catalyst, uncork-capital — https://getduckbill.com
+**Areas:** Company · Consumer · AI Assistant · Personal Assistant · Task Automation · Agents · MCP · Concierge
+
+## Duckbill on APIs.io
+
+Everything profiled for Duckbill is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/duckbill/](https://apis.io/providers/duckbill/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [duckbill](https://apis.io/servers/duckbill/duckbill/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Duckbill Authentication](https://apis.io/security/duckbill/duckbill-authentication/)
+- [Duckbill Domain Security](https://apis.io/security/duckbill/duckbill-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Duckbill Scopes](https://apis.io/scopes/duckbill/duckbill-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://getduckbill.com)
+- [Documentation](https://getduckbill.com/platform)
+- [Pricing](https://getduckbill.com/pricing)
+- [Sign up](https://app.getduckbill.com/sign-up)
+- [Blog](https://lp.getduckbill.com/blog)
+- [Terms of service](https://getduckbill.com/terms)
+- [Privacy policy](https://getduckbill.com/privacy)
+
+## API Evangelist rating
+
+**Kin Score 22.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 38.1 |
+| Access clarity | 38.2 |
+
+**Agent readiness 10.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 29.4** — AI & Biometrics
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/duckbill/](https://apis.io/providers/duckbill/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Duckbill: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/duckbill/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
